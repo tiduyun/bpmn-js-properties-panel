@@ -328,6 +328,29 @@ label.bpp-hidden {
   }
 }
 
+.m-dialg-input-wrap {
+  display: flex;
+  justify-content: space-between;
+  .left-input-disabled{
+    position: relative;
+    width: 80%;
+    .mask{
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: calc(100% + 7px);
+    }
+  }
+  input[type=text] {
+    padding-right: 0;
+  }
+  input[type=button] {
+    width: 40px;
+    padding: 0;
+  }
+}
 
 @import "./header";
 @import "./groups";
