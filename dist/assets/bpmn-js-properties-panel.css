@@ -52,9 +52,7 @@
 }
 .bpp-properties-panel [type=text],
 .bpp-properties-panel [contenteditable],
-.bpp-properties-panel textarea {
-  width: calc(100% - 16px);
-}
+.bpp-properties-panel textarea,
 .bpp-properties-panel select {
   width: 100%;
 }
@@ -222,7 +220,7 @@
   right: 32px;
 }
 .bpp-properties-entry {
-  margin-bottom: 9px;
+  margin-bottom: 20px;
 }
 .bpp-properties-entry .bpp-field-wrapper {
   position: relative;
@@ -353,9 +351,9 @@ label.bpp-hidden {
   padding-right: 0;
 }
 .m-dialg-input-wrap button {
-  height: 34px;
+  height: 32px;
   width: auto;
-  padding: 0px 15px;
+  padding: 0px 12px;
   color: #fff;
   background-color: #566779;
   border-color: #344557;
@@ -364,6 +362,11 @@ label.bpp-hidden {
 }
 .m-dialg-input-wrap button i {
   font-style: normal;
+}
+.m-dialg-input-wrap button:hover {
+  background: #788594;
+  border-color: #5d6a79;
+  color: #fff;
 }
 #cam-extensionElements-form-fields {
   min-height: 100px;

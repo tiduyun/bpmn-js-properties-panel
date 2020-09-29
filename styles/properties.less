@@ -52,10 +52,8 @@
 
   [type=text],
   [contenteditable],
-  textarea {
-    width: calc(100% - 16px);
-  }
-  select {
+  textarea, select {
+    // width: calc(100% - 16px);
     width: 100%;
   }
 
@@ -208,7 +206,7 @@
 }
 
 .bpp-properties-entry {
-  margin-bottom: 9px;
+  margin-bottom: 20px;
 
   .bpp-field-wrapper {
     position: relative;
@@ -346,9 +344,9 @@ label.bpp-hidden {
     padding-right: 0;
   }
   button {
-    height: 34px;
+    height: 32px;
     width: auto;
-    padding: 0px 15px;
+    padding: 0px 12px;
     color: #fff;
     background-color: #566779;
     border-color: #344557;
@@ -356,6 +354,11 @@ label.bpp-hidden {
     right: 0;
     i{
       font-style: normal;
+    }
+    &:hover{
+      background: #788594;
+      border-color: #5d6a79;
+      color: #fff;
     }
   }
 }
