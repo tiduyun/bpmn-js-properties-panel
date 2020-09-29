@@ -114,7 +114,8 @@
 .bpp-properties-panel button {
   position: absolute;
   top: 0;
-  height: 23px;
+  height: 24px;
+  line-height: 24px;
   width: 24px;
   overflow: hidden;
   background-color: #f8f8f8;
@@ -211,7 +212,6 @@
 .bpp-select button.clear,
 .bpp-element-list button.clear {
   top: -32px;
-  border-bottom: none;
 }
 .bpp-select button.add,
 .bpp-element-list button.add {
@@ -352,12 +352,21 @@ label.bpp-hidden {
 .m-dialg-input-wrap input[type=text] {
   padding-right: 0;
 }
-.m-dialg-input-wrap input[type=button] {
+.m-dialg-input-wrap button {
+  height: 34px;
+  width: auto;
   padding: 0px 15px;
   color: #fff;
   background-color: #566779;
   border-color: #344557;
   border-radius: 4px;
+  right: 0;
+}
+.m-dialg-input-wrap button i {
+  font-style: normal;
+}
+#cam-extensionElements-form-fields {
+  min-height: 100px;
 }
 .bpp-properties-header {
   padding: 15px;

@@ -194,7 +194,7 @@
     &.add,
     &.clear {
       top: -@input-height;
-      border-bottom: none;
+      // border-bottom: none;
     }
   }
 
@@ -345,14 +345,23 @@ label.bpp-hidden {
   input[type=text] {
     padding-right: 0;
   }
-  input[type=button] {
-    // width: 40px;
+  button {
+    height: 34px;
+    width: auto;
     padding: 0px 15px;
     color: #fff;
     background-color: #566779;
     border-color: #344557;
     border-radius: 4px;
+    right: 0;
+    i{
+      font-style: normal;
+    }
   }
+}
+
+#cam-extensionElements-form-fields{
+  min-height: 100px;
 }
 
 @import "./header";
