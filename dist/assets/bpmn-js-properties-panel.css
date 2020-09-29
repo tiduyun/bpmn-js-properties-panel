@@ -211,6 +211,11 @@
 .bpp-element-list button.clear {
   top: -32px;
 }
+.bpp-select #cam-extensionElements-remove-form-fields,
+.bpp-element-list #cam-extensionElements-remove-form-fields {
+  height: 24px;
+  line-height: 24px;
+}
 .bpp-select button.add,
 .bpp-element-list button.add {
   right: 0px;
@@ -230,6 +235,10 @@
 }
 .bpp-properties-entry .bpp-field-wrapper select {
   resize: vertical;
+}
+.bpp-properties-entry .bpp-field-wrapper .clear {
+  height: 32px;
+  line-height: 32px;
 }
 .bpp-hidden {
   display: none;
