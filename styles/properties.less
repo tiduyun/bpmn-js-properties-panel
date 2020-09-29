@@ -32,8 +32,11 @@
   textarea,
   [contenteditable] {
     font-size: 14px;
-    padding: 3px 6px;
+    padding: 0px 8px;
+    height: @input-height;
+    line-height: @input-height;
     border: 1px solid @bpp-input-border-color;
+    color: #606266;
 
     &:focus {
       .focus();
@@ -49,7 +52,9 @@
 
   [type=text],
   [contenteditable],
-  textarea,
+  textarea {
+    width: calc(100% - 16px);
+  }
   select {
     width: 100%;
   }
@@ -82,8 +87,6 @@
 
   label {
     .label();
-
-    margin-bottom: 3px;
   }
 
   .entry-label {
@@ -162,10 +165,6 @@
 }
 
 .bpp-textfield {
-  input {
-    padding-right: 28px;
-  }
-
   .clear {
     background: transparent;
     border: none;
@@ -180,7 +179,7 @@
 
 .bpp-select {
   select {
-    height: 23px;
+    height: @input-height;
   }
   button.add {
     top: -22px;
@@ -194,7 +193,7 @@
   button {
     &.add,
     &.clear {
-      top: -23px;
+      top: -@input-height;
       border-bottom: none;
     }
   }
@@ -204,7 +203,7 @@
   }
 
   button.clear {
-    right: 23px;
+    right: @input-height;
   }
 }
 
@@ -346,13 +345,13 @@ label.bpp-hidden {
   input[type=text] {
     padding-right: 0;
   }
-  button {
-    width: 46px;
-    padding: 0;
-    position: relative;
-    i{
-      font-style: normal;
-    }
+  input[type=button] {
+    // width: 40px;
+    padding: 0px 15px;
+    color: #fff;
+    background-color: #566779;
+    border-color: #344557;
+    border-radius: 4px;
   }
 }
 
