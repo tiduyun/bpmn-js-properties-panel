@@ -22,8 +22,11 @@
 .bpp-properties-panel textarea,
 .bpp-properties-panel [contenteditable] {
   font-size: 14px;
-  padding: 3px 6px;
-  border: 1px solid #cccccc;
+  padding: 0px 8px;
+  height: 32px;
+  line-height: 32px;
+  border: 1px solid #e4e7ed;
+  color: #606266;
 }
 .bpp-properties-panel button:focus,
 .bpp-properties-panel input:focus,
@@ -31,8 +34,7 @@
 .bpp-properties-panel textarea:focus,
 .bpp-properties-panel [contenteditable]:focus {
   outline: none;
-  border-color: #1a70ff;
-  box-shadow: 0 0 0 2px #a2c5ff, 0 0 0 1px #cdcdcd inset;
+  border-color: #566779;
 }
 .bpp-properties-panel button.invalid,
 .bpp-properties-panel input.invalid,
@@ -50,7 +52,9 @@
 }
 .bpp-properties-panel [type=text],
 .bpp-properties-panel [contenteditable],
-.bpp-properties-panel textarea,
+.bpp-properties-panel textarea {
+  width: calc(100% - 16px);
+}
 .bpp-properties-panel select {
   width: 100%;
 }
@@ -83,8 +87,8 @@
   font-weight: bolder;
   display: inline-block;
   vertical-align: middle;
-  color: #666666;
-  margin-bottom: 3px;
+  color: #606266;
+  margin-bottom: 10px;
 }
 .bpp-properties-panel label.bpp-hidden {
   display: none;
@@ -93,7 +97,7 @@
   font-weight: bolder;
   display: inline-block;
   vertical-align: middle;
-  color: #666666;
+  color: #606266;
   font-size: 16px;
   margin-top: 5px;
   margin-bottom: 10px;
@@ -102,7 +106,7 @@
   display: none;
 }
 .bpp-properties-panel .entry-label.divider {
-  border-top: 1px dotted #cccccc;
+  border-top: 1px dotted #e4e7ed;
   padding-top: 8px;
   margin-top: 16px;
   width: 100%;
@@ -114,7 +118,7 @@
   width: 24px;
   overflow: hidden;
   background-color: #f8f8f8;
-  border: 1px solid #cccccc;
+  border: 1px solid #e4e7ed;
 }
 .bpp-properties-panel button > span {
   display: none;
@@ -186,9 +190,6 @@
 .bpp-checkbox label:after {
   display: none;
 }
-.bpp-textfield input {
-  padding-right: 28px;
-}
 .bpp-textfield .clear {
   background: transparent;
   border: none;
@@ -199,7 +200,7 @@
   margin-top: 7px;
 }
 .bpp-select select {
-  height: 23px;
+  height: 32px;
 }
 .bpp-select button.add {
   top: -22px;
@@ -209,7 +210,7 @@
 .bpp-element-list button.add,
 .bpp-select button.clear,
 .bpp-element-list button.clear {
-  top: -23px;
+  top: -32px;
   border-bottom: none;
 }
 .bpp-select button.add,
@@ -218,7 +219,7 @@
 }
 .bpp-select button.clear,
 .bpp-element-list button.clear {
-  right: 23px;
+  right: 32px;
 }
 .bpp-properties-entry {
   margin-bottom: 9px;
@@ -297,14 +298,14 @@ label.bpp-hidden {
 .bpp-properties-static {
   margin-bottom: 0;
   margin-top: 0;
-  border: 1px solid #cccccc;
+  border: 1px solid #e4e7ed;
   background-color: #ffffff;
   padding: 3px 6px;
   font: 13.3333px Arial;
   width: 100%;
 }
 .bpp-entry-link {
-  color: #1a70ff;
+  color: #566779;
 }
 .bpp-icon-warning:before {
   font-family: "bpmn-js-pp";
@@ -326,11 +327,11 @@ label.bpp-hidden {
   color: #999999;
 }
 .bpp-field-description a {
-  color: #0056e6;
+  color: #414e5b;
   text-decoration: none;
 }
 .bpp-field-description a:hover {
-  color: #1a70ff;
+  color: #566779;
 }
 .m-dialg-input-wrap {
   display: flex;
@@ -351,17 +352,17 @@ label.bpp-hidden {
 .m-dialg-input-wrap input[type=text] {
   padding-right: 0;
 }
-.m-dialg-input-wrap button {
-  width: 46px;
-  padding: 0;
-  position: relative;
-}
-.m-dialg-input-wrap button i {
-  font-style: normal;
+.m-dialg-input-wrap input[type=button] {
+  padding: 0px 15px;
+  color: #fff;
+  background-color: #566779;
+  border-color: #344557;
+  border-radius: 4px;
 }
 .bpp-properties-header {
   padding: 15px;
   padding-bottom: 5px;
+  display: none;
 }
 .bpp-properties-header > .label {
   font-size: 16px;
@@ -391,9 +392,11 @@ label.bpp-hidden {
   content: '\E805';
 }
 .bpp-properties-group {
-  padding: 6px 15px 6px 15px;
+  padding-left: 15px;
   position: relative;
   overflow: hidden;
+  padding-right: 15px;
+  margin-top: 15px;
 }
 .bpp-properties-group:empty {
   display: none;
@@ -412,7 +415,7 @@ label.bpp-hidden {
   font-weight: bolder;
   display: inline-block;
   vertical-align: middle;
-  color: #666666;
+  color: #606266;
   margin-top: 5px;
   margin-bottom: 10px;
   font-size: 16px;
@@ -421,7 +424,7 @@ label.bpp-hidden {
   display: none;
 }
 .bpp-properties-group:hover > .group-toggle {
-  background-color: #cccccc;
+  background-color: #e4e7ed;
 }
 .bpp-properties-group:hover > .group-toggle:hover {
   background-color: #4d90ff;
@@ -430,7 +433,7 @@ label.bpp-hidden {
   border-top: none;
 }
 .bpp-properties-group.group-closed > .group-toggle {
-  background-color: #cccccc;
+  background-color: #e4e7ed;
 }
 .bpp-properties-group.group-closed:hover > .group-toggle {
   background-color: #4d90ff;
@@ -452,7 +455,7 @@ label.bpp-hidden {
   margin-left: 10px;
 }
 [data-list-entry-container] > .bpp-listener-area {
-  border: 1px solid #cccccc;
+  border: 1px solid #e4e7ed;
   margin: 10px 1px;
   padding: 10px;
 }
@@ -470,13 +473,13 @@ label.bpp-hidden {
   margin-top: 20px;
 }
 .bpp-properties-tab-bar {
-  border-bottom: 1px solid #cccccc;
-  padding: 0 15px;
+  border-bottom: 2px solid #e4e7ed;
+  padding: 15px 15px 0 15px;
 }
 .bpp-properties-tab-bar .scroll-tabs-button {
   font-size: 16px;
   padding: 3px 4px 3px 4px;
-  color: #666666;
+  color: #606266;
 }
 .bpp-properties-tab-bar .scroll-tabs-button:hover {
   font-weight: bold;
@@ -493,40 +496,40 @@ label.bpp-hidden {
   display: none;
 }
 ul.bpp-properties-tabs-links {
-  margin: 5px 0 -1px 0;
+  margin: 5px 0 -2px 0;
   padding: 0;
   white-space: nowrap;
   overflow: hidden;
 }
 ul.bpp-properties-tabs-links > li {
   display: inline-block;
-  margin: 0;
+  margin-right: 20px;
 }
 ul.bpp-properties-tabs-links > li.bpp-hidden {
   display: none;
 }
 ul.bpp-properties-tabs-links > li > a {
   display: inline-block;
-  font-size: 12px;
-  padding: 4px 7px;
-  border: 1px solid #cccccc;
+  font-size: 14px;
   border-radius: 3px 3px 0 0;
-  border-bottom: transparent;
   background-color: #f8f8f8;
-  color: #666666;
+  color: #606266;
   text-decoration: none;
   cursor: default;
 }
 ul.bpp-properties-tabs-links > li > a:hover {
-  color: #4d4d4d;
+  color: #47494c;
+}
+ul.bpp-properties-tabs-links > li > a:first-children {
+  padding-left: 0;
 }
 ul.bpp-properties-tabs-links > li + li {
   margin-left: 4px;
 }
 ul.bpp-properties-tabs-links > li.bpp-active a {
   padding-bottom: 5px;
-  border-top: 3px solid #4d90ff;
-  border-bottom: none;
+  color: #f38231;
+  border-bottom: 2px solid #f38231;
 }
 .bpp-properties-tab,
 .bpp-properties-tab.bpp-hidden {
