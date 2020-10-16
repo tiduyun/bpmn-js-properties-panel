@@ -236,7 +236,7 @@
 .bpp-properties-entry .bpp-field-wrapper select {
   resize: vertical;
 }
-.bpp-properties-entry .bpp-field-wrapper .clear {
+.bpp-properties-entry .bpp-field-wrapper .clear[data-action='clear'] {
   height: 32px;
   line-height: 32px;
 }
