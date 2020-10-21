@@ -377,7 +377,9 @@ label.bpp-hidden {
   border-color: #5d6a79;
   color: #fff;
 }
-#cam-extensionElements-form-fields {
+#cam-extensionElements-form-fields,
+#cam-extensionElements-executionListeners,
+#cam-extensionElements-taskListeners {
   min-height: 100px;
 }
 .bpp-properties-header {
