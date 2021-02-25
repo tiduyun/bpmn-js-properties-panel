@@ -37,6 +37,7 @@
     line-height: @input-height;
     border: 1px solid @bpp-input-border-color;
     color: #606266;
+    border-radius: 4px;
 
     &:focus {
       .focus();
@@ -210,10 +211,9 @@
 }
 
 .bpp-properties-entry {
-  margin-bottom: 20px;
-
   .bpp-field-wrapper {
     position: relative;
+    margin-bottom: 20px;
 
     input[readonly] + .clear {
       display: none;

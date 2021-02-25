@@ -27,6 +27,7 @@
   line-height: 32px;
   border: 1px solid #e4e7ed;
   color: #606266;
+  border-radius: 4px;
 }
 .bpp-properties-panel button:focus,
 .bpp-properties-panel input:focus,
@@ -224,11 +225,9 @@
 .bpp-element-list button.clear {
   right: 32px;
 }
-.bpp-properties-entry {
-  margin-bottom: 20px;
-}
 .bpp-properties-entry .bpp-field-wrapper {
   position: relative;
+  margin-bottom: 20px;
 }
 .bpp-properties-entry .bpp-field-wrapper input[readonly] + .clear {
   display: none;
@@ -419,7 +418,7 @@ label.bpp-hidden {
   position: relative;
   overflow: hidden;
   padding-right: 15px;
-  margin-top: 15px;
+  padding-top: 15px;
 }
 .bpp-properties-group:empty {
   display: none;
