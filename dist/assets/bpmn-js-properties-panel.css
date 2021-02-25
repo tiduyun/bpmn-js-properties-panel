@@ -52,7 +52,7 @@
   box-shadow: 0 0 0 2px #ffb3b3, 0 0 0 1px #cdcdcd inset;
 }
 .bpp-properties-panel [contenteditable] {
-  resize: none;
+  resize: none !important;
 }
 .bpp-properties-panel [type=text],
 .bpp-properties-panel [contenteditable],
